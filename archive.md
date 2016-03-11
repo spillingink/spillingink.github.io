@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Manjaro archive
+title: Archives
 permalink: /archive/
 ---
 
