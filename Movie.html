@@ -1,0 +1,68 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>Spilling ink</title>
+<style>
+    nav ul {
+      list-style: none;   
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;    
+    }
+  </style>
+<style>
+.video-row{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.video-item{
+  flex: 1;      /* each item takes equal space */
+  min-width: 0; /* prevents overflow in flex layouts */
+}
+
+.video-item video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* On small screens, stack them */
+@media (max-width: 700px){
+  .video-row{ flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<div style="text-align: center; font-size: 50pt; color: black; background-color: lightpink; float: center; margin: 0 auto; height: 100px; width: 1,000px; font-family: "American Typewriter", serif;">
+Spilling ink
+</div>
+<nav>
+<ul>
+<li><a href= " spilling ink website pg2.html"> Archives</a></li>
+<li><a href= " spilling ink website pg2.html"> Current newsletter</a></li>
+<li><a href= " index.html">Home</a></li>
+<li><a href= "Movie.html">Movies</a></li>
+<li><a href= " spilling ink website pg2.html">Writing Corner</a></li>
+<li><a href= " spilling ink website pg2.html"> Other</a></li>
+</ul>
+</nav>
+<div class="video-row">
+  <div class="video-item">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ShM0om-UdYo?si=_05gkiW0RLX_WU6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>The Missing Murderer</p>
+  </div>
+
+  <div class="video-item">
+    <video controls>
+      <source src="You and I.mp4" type="video/mp4">
+    </video>
+    <p>You and I a horror story based of Annie</p>
+  </div>
+</div>
+</body>
