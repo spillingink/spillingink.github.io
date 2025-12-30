@@ -22,8 +22,8 @@
 }
 
 .video-item{
-  flex: 1;      /* each item takes equal space */
-  min-width: 0; /* prevents overflow in flex layouts */
+  flex: 1;      
+  min-width: 0;
 }
 
 .video-item video{
@@ -32,7 +32,7 @@
   display: block;
 }
 
-/* On small screens, stack them */
+
 @media (max-width: 700px){
   .video-row{ flex-direction: column; }
 }
@@ -57,12 +57,10 @@ Spilling ink
    <iframe width="560" height="315" src="https://www.youtube.com/embed/ShM0om-UdYo?si=_05gkiW0RLX_WU6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>The Missing Murderer</p>
   </div>
-
   <div class="video-item">
-    <video controls>
-      <source src="You and I.mp4" type="video/mp4">
-    </video>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/1EB5WHap_Kg?si=hWcKqa_CXihMign-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>You and I a horror story based of Annie</p>
   </div>
 </div>
 </body>
+</html>
