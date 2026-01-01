@@ -1,4 +1,4 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Spilling ink</title>
@@ -17,25 +17,30 @@
 <style>
 .video-row{
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: flex-start;
 }
 
 .video-item{
-  flex: 1;      
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 8px);      
   min-width: 0;
 }
 
-.video-item video{
+.video-item iframe{
   width: 100%;
+  aspect-ratio: 16 / 9;
   height: auto;
   display: block;
+  border: 0;
 }
 
 
 @media (max-width: 700px){
   .video-row{ flex-direction: column; }
 }
+
 </style>
 </head>
 <body>
@@ -54,13 +59,16 @@ Spilling ink
 </nav>
 <div class="video-row">
   <div class="video-item">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/TTS81bxXuT4?si=ndszltgTF7Gyl9_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/TTS81bxXuT4?si=ndszltgTF7Gyl9_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>The Missing Murderer</p>
   </div>
   <div class="video-item">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/1EB5WHap_Kg?si=hWcKqa_CXihMign-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe src="https://www.youtube.com/embed/1EB5WHap_Kg?si=hWcKqa_CXihMign-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>You and I a horror story based of Annie</p>
   </div>
+<div class="video-item">
+<iframe src="https://www.youtube.com/embed/2dQ7ACPr3N4?si=782bY412spe7IcOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>My Melody and the case of the missing sandwich</p>
+</div>
 </div>
 </body>
-</html>
