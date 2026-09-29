@@ -11,8 +11,196 @@
 
     nav li {
       display: inline-block;
-      margin-right: 20px;    
+      margin-right: 10px;    
     }
+   nav a {
+   display: inline-block;
+   background-color: lightseagreen;
+
+   color:white;
+   padding: 5px 15px;
+   text-decoration: none;
+
+    border: 4px solid darkgreen;
+    border-radius: 4px;
+    }
+   
+    nav a.newsletter-link {
+
+  background-color: cyan;
+  border:none;
+  color: dodgerblue;
+
+}
+
+.summer-box {
+width: 560px;
+float: left;
+min-height: 300px;
+margin-top: 20px;
+margin-left: 0;
+padding: 20px;
+
+  box-sizing: border-box;
+
+  background-color: plum;
+
+  border: 4px solid mediumorchid;
+
+  border-radius: 5px;
+
+  text-align: left;
+
+  overflow-wrap: break-word;
+
+}
+
+.summer-title {
+
+  color: mediumorchid;
+
+  font-size: 45px;
+
+  margin-bottom: 20px;
+
+}
+
+.summer-text {
+
+  color: mediumorchid;
+
+  font-size: 30px;
+   text-decoration: none;
+
+}
+
+
+.features-box {
+width: 560px;
+float: right;
+min-height: 300px;
+margin-top: 20px;
+Margin-left: auto;
+margin-right: 0;
+padding: 20px;
+
+  box-sizing: border-box;
+
+  background-color: gold;
+
+  border: 4px solid darkorange;
+
+  border-radius: 5px;
+
+  text-align: right;
+
+  overflow-wrap: break-word;
+
+}
+
+.features-title {
+
+  color: orangered;
+
+  font-size: 45px;
+
+  margin-bottom: 20px;
+
+}
+
+.features-text {
+
+  color: orangered;
+
+  font-size: 30px;
+   text-decoration: none;
+  
+
+}
+.comments-box {
+width: 560px;
+clear: both;
+float: right;
+min-height: 300px;
+margin-top: 10px;
+margin-left: 0;
+padding: 20px;
+
+  box-sizing: border-box;
+
+  background-color: red;
+
+  border: 4px solid crimson;
+
+  border-radius: 5px;
+
+  text-align: left;
+
+  overflow-wrap: break-word;
+
+}
+
+.comments-title {
+
+  color: darkred;
+
+  font-size: 45px;
+
+  margin-bottom: 20px;
+
+}
+
+.comments-text {
+
+  color: darkred;
+
+  font-size: 30px;
+   text-decoration: none;
+
+}
+.poll-box {
+width: 560px;
+clear: left;
+float: left;
+min-height: 300px;
+margin-top: 10px;
+margin-left: 0;
+padding: 20px;
+
+  box-sizing: border-box;
+
+  background-color: lightgreen;
+
+  border: 4px solid forestgreen;
+
+  border-radius: 5px;
+
+  text-align: left;
+
+  overflow-wrap: break-word;
+
+}
+
+.poll-title {
+
+  color: olivedrab;
+
+  font-size: 45px;
+
+  margin-bottom: 20px;
+
+}
+
+.poll-text {
+
+  color: olivedrab;
+
+  font-size: 30px;
+   text-decoration: none;
+
+}
+
+
   </style>
 </head>
 <body>
@@ -22,17 +210,107 @@ Spilling ink
 <div style="font-size: 25px;">
 <nav>
 <ul>
-<li><a href= " index.html">Home</a></li>
+<li><a href= "index.html">Home</a></li>
 <li><a href= "Movie.html">Movies</a></li>
-<li><a href= "Other.html">Other</a></li>
+<li><a href= "Writing.html">Writing Corner</a></li>
 </ul>
 </nav>
 </div>
-<div style="font-size: 30px; text-align: center;">
-<p> New! Movies in the links. Go and check out fun and exiting movies!</p>
+<div style="text-align; center; font-size: 50px; color: dodgerblue; background-color: aqua;  float:center; margin: 1 auto; height: 50px; width: 100%px; font-family:"American Typewriter", serif;">
+ New Update!!  
 </div>
-</body>
-</html>
+<nav>
+<ul>
+<div style= "text-align; center; font-size: 30px; color: dodgerblue; background-color:cyan;  float:center; margin: 1 auto; height: 105px; width: 100%px;">
+<li><a href= "" class="newsletter-link"> </a> Roam around and explore this new updated website!</li>
+</div>
+</ul>
+</nav>
+<div class="summer-box">
+<div class="summer-title">
+Coming up!
+</div>
+<a href= "" class="summer-text"> Coming up soon, is a fun friendly scavenger hunt for students at one specific school! For more information contact me! </a>
+</div>
+</ul>
+</nav>
+<div class="features-box">
+<div class="features-title">
+New features
+</div>
+<a href= "" class="features-text"> Hiya, a new updated version of this website means many new things. We now have more stories, more movies, and a new look! </a>
+</div>
+<div class="comments-box">
+<div class="comments-title">
+Contact
+</div>
+<a href= "" class="comments-text"> If you ever want to contact me, for suggestions, questions, or anything else. You can email me at dhristidesai@hotmail.com </a>
+</div>
+<div class="poll-box">
+    <div class="poll-title">
+        Poll
+    </div>
+
+    <div class="poll-text">
+       Which season do you prefer? Summer or Winter?
+    </div>
+<p>Summer Votes:</p>
+
+<h2 id="summerVotes">0</h2>
+
+
+
+<button onclick="voteSummer()">Summer</button>
+
+<br><br>
+
+<p>Winter Votes:</p>
+
+<h2 id="winterVotes">0</h2>
+
+<button onclick="voteWinter()">Winter</button>
+ 
+<script>
+
+let summerVotes = localStorage.getItem("summerVotes");
+
+let winterVotes = localStorage.getItem("winterVotes");
+
+if (summerVotes === null) {
+    summerVotes = 0;
+}
+
+if (winterVotes === null) {
+    winterVotes = 0;
+}
+
+document.getElementById("summerVotes").textContent = summerVotes;
+
+document.getElementById("winterVotes").textContent = winterVotes;
+
+function voteSummer() {
+
+    summerVotes++;
+
+    document.getElementById("summerVotes").textContent = summerVotes;
+
+     localStorage.setItem("summerVotes",summerVotes);
+
+}
+
+
+
+function voteWinter() {
+
+    winterVotes++;
+
+    document.getElementById("winterVotes").textContent = winterVotes;
+
+     localStorage.setItem("winterVotes",winterVotes);
+}
+
+</script>
+   </body>
 
 
 
